@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "types": ["svelte"],
+    "typeRoots" : ["node_modules/@types"],
+    "paths": {
+      "svelte/*": ["node_modules/svelte/*"],
+      "@Components/*": ["src/components/*"],
+      "@Functions/*": ["src/functions/*"],
+      "@Types/*": ["src/types/*"],
+    },
+    "outDir": "./public/build",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true,
+    "allowJs": true,
+    "lib": [
+      "DOM",
+      "ESNext"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.svelte"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
